@@ -1,0 +1,136 @@
+/* 全体のスタイル */ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* ヘッダー */
+header.mountain-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex; /* フレックスボックスを使用して画像とテキストを配置 */
+    align-items: center; /* 垂直方向に中央揃え */
+    justify-content: flex-start; /* 左寄せ */
+}
+
+/* 左端に挿入する画像 */
+header.mountain-header .header-image {
+    height: 60px; /* 画像の高さ */
+    width: auto;  /* 横幅は自動調整 */
+    margin: 0 20px 0 0;
+    margin-right: 20px; /* 画像とテキストの間隔 */
+}
+
+/* テキスト部分 */
+header.mountain-header .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+    align-items: flex-start;
+}
+
+header.mountain-header .header-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header.mountain-header .header-text p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* コンテナ */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 記事リスト */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #ecf0f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #d0e6e7;
+}
+
+li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: #1abc9c;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
+
+
+/* 画像のスタイル設定 */
+img {
+    max-width: 40%; /* 親要素の幅に合わせて画像の幅を調整 */
+    height: auto; /* アスペクト比を保持 */
+    display: block; /* 画像をブロック要素として表示 */
+    margin: 0 auto; /* 画像を中央に配置 */
+}
+
+/* 画像の枠線 */
+img.border {
+    border: 5px solid #ddd; /* 薄いグレーの枠線 */
+    border-radius: 8px; /* 角を丸くする */
+    padding: 5px; /* 枠線と画像の間にスペース */
+}
+
+/* 画像の影を追加 */
+img.shadow {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* 画像に影を付ける */
+}
+
+/* 画像のレスポンシブデザイン */
+@media screen and (max-width: 768px) {
+    img {
+        width: 100%; /* スマホやタブレットなど画面が狭い場合に画像の幅を100%に設定 */
+    }
+}
