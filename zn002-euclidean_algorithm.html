@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ユークリッドの互除法|完全解説 (Mt.MATH)">
+    <meta name="keywords" content="['最大公約数', 'アルゴリズム', '整数論'], Mt.MATH, 証明, 分かりやすい, 簡単, 数学, 中学数学, 高校数学">
+    <meta name="author" content="YFIT Japan">
+    <title>ユークリッドの互除法 - Mt.MATH</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>ユークリッドの互除法</h2>
+            <p>
+                二つの整数aとb（a > b）の最大公約数（GCD）は、bとaをbで割った余りrの最大公約数に等しい。数式で表すと、\(\gcd(a, b) = \gcd(b, r)\)。ここで、\(r = a \mod b\)である。
+            </p><br><br>
+            <ul>
+            <li>ユークリッドの互除法は、二つの整数の最大公約数を効率的に求めるアルゴリズムである。この方法は整数論の基礎であり、現代の暗号理論などにも応用される重要な手法である。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>二つの整数aとb（a > b）を考え、aをbで割った商をq、余りをrとする。\(a = bq + r\)が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(d = \gcd(a, b)\)とし、dがbとrの公約数でもあることを示す。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>dはaとbの公約数であるため、\(a = d \cdot m\)、\(b = d \cdot n\)と表せる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(r = a - bq = d \cdot m - d \cdot n \cdot q = d(m - nq)\)となるため、dはrの約数でもある。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>次に、dがbとrの最大公約数であることを示す。\(\gcd(b, r) = d'\)とし、d'がaとbの公約数でもあることを示す。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>d'はbとrの公約数であるため、\(b = d' \cdot n'\)、\(r = d' \cdot m'\)と表せる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(a = bq + r = d' \cdot n' \cdot q + d' \cdot m' = d'(n'q + m')\)となるため、d'はaの約数でもある。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>したがって、d'はaとbの公約数であり、d' ≤ dが成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>dはbとrの公約数であり、d'はaとbの公約数であるため、d = d'が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>以上より、\(\gcd(a, b) = \gcd(b, r)\)が証明される。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
