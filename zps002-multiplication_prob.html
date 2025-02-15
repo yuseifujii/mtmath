@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="確率の乗法定理|完全解説 (Mt.MATH)">
+    <meta name="keywords" content="['確率の乗法定理', '条件付き確率', '事象'], Mt.MATH, 証明, 分かりやすい, 簡単, 数学, 中学数学, 高校数学">
+    <meta name="author" content="YFIT Japan">
+    <title>確率の乗法定理 - Mt.MATH</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>確率の乗法定理</h2>
+            <p>
+                二つの事象AとBが同時に起こる確率は、\(P(A \cap B) = P(A) \cdot P(B|A)\)で与えられる。ここで、\(P(B|A)\)はAが起こった条件下でのBの確率である。
+            </p><br><br>
+            <ul>
+            <li>確率の乗法定理は、二つの事象が同時に起こる確率を求めるための定理である。この定理は確率論の基礎であり、条件付き確率や独立事象の理解に重要な役割を果たす。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>二つの事象AとBの同時確率\(P(A \cap B)\)を考える。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>条件付き確率の定義により、\(P(B|A) = \frac{P(A \cap B)}{P(A)}\)が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ P(B|A) = \frac{P(A \cap B)}{P(A)} \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>この式を変形すると、\(P(A \cap B) = P(A) \cdot P(B|A)\)が得られる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ P(A \cap B) = P(A) \cdot P(B|A) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>同様に、\(P(A|B) = \frac{P(A \cap B)}{P(B)}\)も成り立つため、\(P(A \cap B) = P(B) \cdot P(A|B)\)も得られる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ P(A \cap B) = P(B) \cdot P(A|B) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これにより、確率の乗法定理が証明される。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
