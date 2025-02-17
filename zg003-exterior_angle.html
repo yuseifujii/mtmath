@@ -87,6 +87,64 @@
               </div>
             
         </div>
+
+        <div class="container">
+        <h2>応用問題</h2>
+        
+        <div class="question">
+    <h3>【レベル：易】</h3>
+    <p><strong>三角形 \( ABC \) において、外角 \( \angle ACD \) が \( 110° \) であり、内角 \( \angle BAC \) が \( 50° \) である。このとき、内角 \( \angle ABC \) の大きさを求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer5')">解答</span>
+    <div id="answer5" class="answer">
+        <p>外角の定理より、三角形の外角はそれと隣り合わない2つの内角の和に等しい。したがって、</p>
+        <p>\( \angle ACD = \angle BAC + \angle ABC \)</p>
+        <p>与えられた値を代入すると、</p>
+        <p>\( 110° = 50° + \angle ABC \)</p>
+        <p>\( \angle ABC = 110° - 50° = 60° \)</p>
+        <p>したがって、\( \angle ABC = 60° \)</p>
+    </div>
+</div><br>
+
+<div class="question">
+    <h3>【レベル：標準】</h3>
+    <p><strong>三角形 \( ABC \) において、外角 \( \angle ACD \) が \( 130° \) であり、内角 \( \angle ABC \) が \( 45° \) である。このとき、内角 \( \angle BAC \) の大きさを求めよ。さらに、残りの内角 \( \angle ACB \) の大きさも求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer6')">解答</span>
+    <div id="answer6" class="answer">
+        <p>外角の定理より、三角形の外角はそれと隣り合わない2つの内角の和に等しい。したがって、</p>
+        <p>\( \angle ACD = \angle BAC + \angle ABC \)</p>
+        <p>与えられた値を代入すると、</p>
+        <p>\( 130° = \angle BAC + 45° \)</p>
+        <p>\( \angle BAC = 130° - 45° = 85° \)</p>
+        <p>次に、三角形の内角の和は \( 180° \) であるため、</p>
+        <p>\( \angle ACB = 180° - (\angle BAC + \angle ABC) \)</p>
+        <p>\( \angle ACB = 180° - (85° + 45°) = 180° - 130° = 50° \)</p>
+        <p>したがって、</p>
+        <p>\( \angle BAC = 85° \)、\( \angle ACB = 50° \)</p>
+    </div>
+</div><br>
+
+<div class="question">
+    <h3>【レベル：難】</h3>
+    <p><strong>以下の図において、三角形 \( ABC \) の外角 \( \angle ACD \) は \( 120° \) である。また、辺 \( AB \) と辺 \( AC \) の長さは等しく、三角形 \( ABC \) は二等辺三角形である。このとき、内角 \( \angle BAC \) の大きさを求めよ。さらに、三角形 \( ABC \) の他の内角 \( \angle ABC \) と \( \angle ACB \) の大きさも求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer4')">解答</span>
+    <div id="answer4" class="answer">
+        <p>まず、外角の定理より、三角形の外角はそれと隣り合わない2つの内角の和に等しい。したがって、</p>
+        <p>\( \angle ACD = \angle BAC + \angle ABC \)</p>
+        <p>与えられた \( \angle ACD = 120° \) より、</p>
+        <p>\( \angle BAC + \angle ABC = 120° \)</p>
+        <p>次に、三角形 \( ABC \) は二等辺三角形であり、辺 \( AB = AC \) であるため、底角 \( \angle ABC = \angle ACB \) となる。したがって、内角の和は、</p>
+        <p>\( \angle BAC + \angle ABC + \angle ACB = 180° \)</p>
+        <p>\( \angle ABC = \angle ACB \) より、</p>
+        <p>\( \angle BAC + 2\angle ABC = 180° \)</p>
+        <p>ここで、\( \angle BAC + \angle ABC = 120° \) を代入すると、</p>
+        <p>\( 120° + \angle ABC = 180° \)</p>
+        <p>\( \angle ABC = 60° \)</p>
+        <p>したがって、\( \angle BAC = 120° - 60° = 60° \)</p>
+        <p>また、\( \angle ACB = \angle ABC = 60° \)</p>
+        <p>以上より、</p>
+        <p>\( \angle BAC = 60° \)、\( \angle ABC = 60° \)、\( \angle ACB = 60° \)</p>
+    </div>
+</div><br>
     </section>
 
     <!-- Footer Section -->
