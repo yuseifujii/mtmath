@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -186,3 +187,193 @@
     </footer>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="中点連結定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>中点連結定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>中点連結定理</h2>
+            <p>
+                三角形の\( 2 \)辺の中点を結ぶ線分は、第\( 3 \)辺と平行であり、その長さは第\( 3 \)辺の長さの半分である。すなわち、三角形\( ABC \)において、辺\( AB \)の中点を\( M \)、辺\( AC \)の中点を\( N \)とすると、線分\( MN \)は辺\( BC \)と平行で、\(MN = \frac{1}{2} BC\)が成り立つ。
+            </p><br><br>
+            <ul>
+            <li>中点連結定理は、三角形の二辺の中点を結ぶ線分が、第三辺と平行であり、その長さが半分であることを示す。この定理は幾何学の基本的な定理の一つであり、図形の性質を理解する上で重要な役割を果たす。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+              <img src="zzg004-1.png" alt="中点連結定理" class="theorem-image">
+              <div class="step">
+                
+                  <p>三角形\(ABC\)を考え、辺ABの中点を\(M\)、辺\( AC \)の中点を\( N\)とする。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>また、\( C \)を通り\( AB \)と平行な直線と直線\( MN \)の交点を\( D \)とする。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>三角形\(AMN\)と三角形\(CDN\)において、</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>　対頂角は等しいので、\( \angle ANM = \angle CND \)</p>
+              
+              </div>
+
+              <div class="step">
+                
+                  <p>　点\(N\)は辺\(AB\)の中点なので、\(AN = CN\)</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>　\( AB // CD \)より、錯角は等しいので、\( \angle MAN = \angle DCN \)</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>よって、一辺とその両端の角が等しいので、\( \triangle AMN ≡ \triangle CDN \)</p>
+                
+              </div>
+
+              <div class="step">
+                
+                <p>よって、\( AM = CD、 MN = DN \) </p>
+              
+              </div>
+
+              <div class="step">
+                
+                <p>よって、\( AM=BM\)かつ\(AM=CD\)なので、\(BM=CD\)</p>
+              
+              </div>
+              <div class="step">
+                
+                <p>これと\(BM // CD\)より、四角形\( BCDM \)は平行四辺形だから、</p>
+              
+              </div>
+              <div class="step">
+                
+                  <div class="formula">\[ BC // MN、 BC = DM \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\( BC = DM \)と\( MN = DN \)より、</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ MN = \frac{1}{2} BC \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>したがって、中点連結定理が証明される。(証明終)</p>
+                
+              </div>
+            
+        </div>
+
+        <div class="container"> <h2>応用問題</h2>
+
+<!-- レベル：易 -->
+<div class="question">
+    <h3>【レベル：易】</h3>
+    <p><strong>三角形 \( ABC \) において、辺 \( AB \) の中点を \( M \)、辺 \( AC \) の中点を \( N \) とする。辺 \( BC \) の長さが \( 12 \) cm のとき、線分 \( MN \) の長さを求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer7')">解答</span>
+    <div id="answer7" class="answer">
+        <p>中点連結定理より、三角形の2辺の中点を結ぶ線分は、残りの辺と平行であり、その長さは残りの辺の長さの半分である。</p>
+        <p>したがって、</p>
+        <p>\( MN = \frac{1}{2} \times BC \)</p>
+        <p>\( MN = \frac{1}{2} \times 12 = 6 \) cm</p>
+        <p>よって、線分 \( MN \) の長さは \( 6 \) cm である。</p>
+    </div>
+</div><br>
+
+<!-- レベル：標準 -->
+<div class="question">
+    <h3>【レベル：標準】</h3>
+    <p><strong>四角形 \( ABCD \) において、辺 \( AB \) の中点を \( M \)、辺 \( BC \) の中点を \( N \)、辺 \( CD \) の中点を \( P \)、辺 \( DA \) の中点を \( Q \) とする。対角線 \( AC \) の長さが \( 10 \) cm のとき、線分 \( MN \) と線分 \( PQ \) の長さをそれぞれ求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer8')">解答</span>
+    <div id="answer8" class="answer">
+        <p>中点連結定理を適用するために、四角形 \( ABCD \) を2つの三角形 \( ABC \) と \( ADC \) に分けて考える。</p>
+        <p>三角形 \( ABC \) において、中点連結定理より、</p>
+        <p>\( MN = \frac{1}{2} \times AC \)</p>
+        <p>同様に、三角形 \( ADC \) において、</p>
+        <p>\( PQ = \frac{1}{2} \times AC \)</p>
+        <p>与えられた \( AC = 10 \) cm より、</p>
+        <p>\( MN = PQ = \frac{1}{2} \times 10 = 5 \) cm</p>
+        <p>したがって、線分 \( MN \) と線分 \( PQ \) の長さはともに \( 5 \) cm である。</p>
+    </div>
+</div><br>
+
+<!-- レベル：難 -->
+<div class="question">
+    <h3>【レベル：難】</h3>
+    <p><strong>三角形 \( ABC \) において、辺 \( AB \) の中点を \( M \)、辺 \( AC \) の中点を \( N \) とする。線分 \( MN \) の長さが \( 8 \) cm のとき、辺 \( BC \) の長さを求めよ。さらに、三角形 \( ABC \) の面積が \( 48 \) cm² であるとき、三角形 \( AMN \) の面積を求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer9')">解答</span>
+    <div id="answer9" class="answer">
+        <p>中点連結定理より、線分 \( MN \) は辺 \( BC \) と平行であり、その長さは辺 \( BC \) の半分である。</p>
+        <p>したがって、</p>
+        <p>\( MN = \frac{1}{2} \times BC \)</p>
+        <p>与えられた \( MN = 8 \) cm より、</p>
+        <p>\( BC = 2 \times MN = 2 \times 8 = 16 \) cm</p>
+        <p>次に、三角形 \( AMN \) の面積を求める。中点連結定理より、三角形 \( AMN \) は三角形 \( ABC \) と相似であり、その相似比は \( 1:2 \) である。</p>
+        <p>相似な図形の面積比は相似比の2乗に等しいため、</p>
+        <p>\( \text{面積比} = \left( \frac{1}{2} \right)^2 = \frac{1}{4} \)</p>
+        <p>したがって、三角形 \( AMN \) の面積は、</p>
+        <p>\( \text{面積}_{AMN} = \frac{1}{4} \times \text{面積}_{ABC} = \frac{1}{4} \times 48 = 12 \) cm²</p>
+        <p>以上より、辺 \( BC \) の長さは \( 16 \) cm、三角形 \( AMN \) の面積は \( 12 \) cm² である。</p>
+    </div>
+</div><br>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+>>>>>>> 626b8481a3f092c62768d145001d7c07492af19d

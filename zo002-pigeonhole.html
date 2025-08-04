@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -92,3 +93,99 @@
     </footer>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="鳩の巣原理(ディリクレの部屋割り論法)を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>鳩の巣原理(ディリクレの部屋割り論法) | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>鳩の巣原理(ディリクレの部屋割り論法)</h2>
+            <p>
+                n個の鳩がm個の巣に入るとき、n > mならば少なくとも1つの巣には2羽以上の鳩が入る。より一般に、\(\lceil \frac{n}{m} \rceil\)以上の鳩が入る巣が存在する。
+            </p><br><br>
+            <ul>
+            <li>鳩の巣原理は、基本的ながら強力な組合せ論の原理で、有限集合の間の写像に関する重要な性質を示す。離散数学や計算機科学など、幅広い分野で応用される。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>鳩の巣原理を証明するために、まずn > mの場合を考える。すべての巣に高々1羽の鳩しか入らないと仮定すると、鳩の総数はm羽以下となるが、これはn > mに矛盾する。したがって、少なくとも1つの巣には2羽以上の鳩が入る。次に、一般の場合を考える。k = \(\lceil \frac{n}{m} \rceil\)とおく。各巣に高々(k-1)羽の鳩しか入らないと仮定すると、鳩の総数はm(k-1)羽以下となる。しかし、kの定義より\(k-1 < \frac{n}{m}\)なので\(m(k-1) < n\)となり、これは矛盾である。したがって、少なくとも1つの巣にはk羽以上の鳩が入る。これにより、鳩の巣原理が証明される。(証明終)</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【応用例の説明】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>例:366人の人がいれば、必ず同じ誕生日の組が存在する(365日を巣と見る)。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>例:13枚のトランプを引けば、必ず同じスートが4枚以上含まれる(4スートを巣と見る)。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【無限集合への拡張】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>無限集合に対しても、濃度を用いて一般化された鳩の巣原理が成立する。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>例:実数から可算集合への写像は、少なくとも1つの逆像が非可算となる。</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+>>>>>>> 626b8481a3f092c62768d145001d7c07492af19d

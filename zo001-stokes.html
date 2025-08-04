@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -173,3 +174,180 @@
     </footer>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ストークスの定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>ストークスの定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>ストークスの定理</h2>
+            <p>
+                向き付け可能なn次元多様体Mとその境界∂Mに対し、コンパクトな台を持つ(n-1)次微分形式ωについて、\(\int_M dω = \int_{∂M} ω\)が成立する。ここでdは外微分演算子を表す。
+            </p><br><br>
+            <ul>
+            <li>ストークスの定理は微分形式の積分を境界上の積分に変換する根本定理で、微分幾何学の要。電磁気学のマクスウェル方程式定式化など、物理学全般で不可欠な数学的基盤を提供する。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>【ステップ1:多様体の分割】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>Mを座標近傍で被覆し、1の分割を用いて局所的な場合に帰着させる。具体的には、開被覆\( U_i \)と従属する1の分割\( ρ_i \)を選び、\(ω = \sum ρ_i ω\)と分解する。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【ステップ2:局所座標系での表現】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>座標近傍U⊂\R^nを単位立方体[0,1]^nとみなし、ωを\(ω = \sum_{i=1}^n (-1)^{i-1} f_i dx_1∧⋯∧\widehat{dx_i}∧⋯∧dx_n\)と表現する（^は除外を意味）。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ dω = \left( \sum_{i=1}^n \frac{\partial f_i}{\partial x_i} \right) dx_1∧⋯∧dx_n \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【ステップ3:左辺の積分計算】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>外微分の定義より：
+\(\int_{[0,1]^n} dω = \sum_{i=1}^n \int_0^1⋯\int_0^1 \frac{\partial f_i}{\partial x_i} dx_1⋯dx_n\)</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>i番目の積分で変数分離し、フビニの定理を適用する。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【ステップ4:部分積分の実行】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>例としてx_1に関する項を処理:
+\(\int_0^1 \frac{\partial f_1}{\partial x_1} dx_1 = f_1(1,x_2,...,x_n) - f_1(0,x_2,...,x_n)\)</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>この計算を全変数について行い、符号に注意して総和を取る。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【ステップ5:境界積分の導出】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>得られた結果は境界∂[0,1]^n上の積分と一致することを確認:
+\(\sum_{i=1}^n (-1)^{i-1} \left[ \int_{x_i=1} f_i dx_1⋯\widehat{dx_i}⋯dx_n - \int_{x_i=0} f_i dx_1⋯\widehat{dx_i}⋯dx_n \right]\)</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ = \int_{∂[0,1]^n} ω \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【ステップ6:座標変換の整合性】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>異なる座標近傍間の接続条件を確認。向きを保つ座標変換で積分値が不変であることを示し、1の分割の和が全体の積分に帰着することを証明する。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【ステップ7:多様体の境界への拡張】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>∂M上の積分がwell-definedであることを示す。境界座標系の誘導向きと整合性を確認しながら、局所計算を貼り合わせる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【最終結論】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>以上の局所的な計算を全体に集約し、1の分割の性質を用いてグローバルな等式\(\int_M dω = \int_{∂M} ω\)が成立することを結論付ける。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+>>>>>>> 626b8481a3f092c62768d145001d7c07492af19d

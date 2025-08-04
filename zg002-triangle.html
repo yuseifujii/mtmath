@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -139,3 +140,146 @@
     </footer>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="三角形の内角の和を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>三角形の内角の和 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>三角形の内角の和</h2>
+            <p>
+                任意の三角形の3つの内角の和は常に\(180\)度である。
+            </p><br><br>
+            <ul>
+            <li>ユークリッド幾何学における基本定理であり、三角形の性質を理解する上で重要である。多角形の内角の和の一般公式の基礎ともなる。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>三角形\(ABC\)を考える。頂点\(A\)を通り、\(BC\)に平行な直線を引く。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>この平行線上に、図のように\( D \)、\( E \)をとる。</p>
+                
+              </div>
+
+              <img src="zzg002-1.png" alt="三角形の内角の和" class="theorem-image">
+            
+              <div class="step">
+                
+                  <p>平行線の性質より、\( ∠DAB \)と\( ∠ABC \)は錯角の関係にあり等しい。また、\( ∠EAC \)と \( ∠ACB \)も錯角であり等しい。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>さらに、直線\( DE \)上にある3つの角\( ∠DAB、∠BAC、∠EAC \)の和は\( 180 \)度である。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ ∠DAB + ∠BAC + ∠EAC = 180° \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>ここで、\( ∠DAB = ∠ACB、∠EAC = ∠ABC \)であるので、</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ ∠ACB + ∠BAC + ∠ABC = 180° \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>よって、三角形の内角の和が\( 180 \)度であることが証明された。(証明終)</p>
+                
+              </div>
+            
+        </div>
+
+        <div class="container">
+        <h2>応用問題</h2>
+        
+        <div class="question">
+            <h3>【レベル：易】</h3>
+            <p><strong>三角形の二つの内角が50°と60°のとき、残りの角の大きさを求めよ。</strong></p>
+            <span class="toggle-btn" onclick="toggleAnswer('answer2')">解答</span>
+            <div id="answer2" class="answer">
+                <p>三角形の内角の和は180°であるため、残りの角度 \( x \) は次のように求められる：</p>
+                <p>\( x = 180° - (50° + 60°) \)</p>
+                <p>\( x = 180° - 110° \)</p>
+                <p>\( x = 70° \)</p>
+            </div>
+        </div><br>
+        
+        <div class="question">
+            <h3>【レベル：標準】</h3>
+            <p><strong>二等辺三角形の底角が35°のとき、残りの角の大きさを求めよ。</strong></p>
+            <span class="toggle-btn" onclick="toggleAnswer('answer3')">解答</span>
+            <div id="answer3" class="answer">
+                <p>三角形の内角の和は180°であるため、残りの角度 \( x \) は次のように求められる：</p>
+                <p>\( x = 180° - (35° + 35°) \)</p>
+                <p>\( x = 180° - 70° \)</p>
+                <p>\( x = 110° \)</p>
+            </div>
+        </div><br>
+
+        <div class="question">
+            <h3>【レベル:難】</h3>
+            <p><strong>三角形の内角の和が180°であることを用いて、\( n \)角形の内角の和は何度か求めよ。</strong></p>
+            <span class="toggle-btn" onclick="toggleAnswer('answer1')">解答</span>
+            <div id="answer1" class="answer">
+                <p>\( n \)角形の1点から引ける対角線は\( n-3 \)本なので、\( n \)角形は\( n-2 \)個の三角形に分割できる。</p>
+                <p>よって、三角形の内角の和が\( 180° \)であることより、\( n \)角形の内角の和は、</p>
+                <p>\( 180° \times (n-2) \)</p>
+            </div>
+        </div><br>
+    </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+>>>>>>> 626b8481a3f092c62768d145001d7c07492af19d
