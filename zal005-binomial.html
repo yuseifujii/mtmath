@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="二項定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>二項定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>二項定理</h2>
+            <p>
+                二項定理によれば、\((a + b)^n\)の展開は以下のように表される。\((a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k\)。ここで、\(\binom{n}{k}\)は組合せの数を表す。
+            </p><br><br>
+            <ul>
+            <li>二項定理は、二項式の冪乗を展開するための公式である。この定理は代数学の基礎であり、確率論や統計学など幅広い分野で応用される重要なツールである。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>二項定理を数学的帰納法を用いて証明する。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>まず、\(n = 1\)のとき、\((a + b)^1 = a + b\)であり、定理は成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>次に、\(n = k\)のとき定理が成り立つと仮定する。つまり、\((a + b)^k = \sum_{i=0}^{k} \binom{k}{i} a^{k-i} b^i\)が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(n = k + 1\)のとき、\((a + b)^{k+1} = (a + b)(a + b)^k\)である。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>帰納法の仮定を用いて、\((a + b)^{k+1} = (a + b) \sum_{i=0}^{k} \binom{k}{i} a^{k-i} b^i\)となる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これを展開すると、\((a + b)^{k+1} = \sum_{i=0}^{k} \binom{k}{i} a^{k+1-i} b^i + \sum_{i=0}^{k} \binom{k}{i} a^{k-i} b^{i+1}\)となる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>第二項のインデックスを\(j = i + 1\)と置き換えると、\(\sum_{j=1}^{k+1} \binom{k}{j-1} a^{k+1-j} b^j\)となる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>両方を合わせると、\((a + b)^{k+1} = \sum_{i=0}^{k} \binom{k}{i} a^{k+1-i} b^i + \sum_{j=1}^{k+1} \binom{k}{j-1} a^{k+1-j} b^j\)となる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これらをまとめると、\((a + b)^{k+1} = \sum_{i=0}^{k+1} \left( \binom{k}{i} + \binom{k}{i-1} \right) a^{k+1-i} b^i\)となる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>組合せの性質により、\(\binom{k}{i} + \binom{k}{i-1} = \binom{k+1}{i}\)が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>したがって、\((a + b)^{k+1} = \sum_{i=0}^{k+1} \binom{k+1}{i} a^{k+1-i} b^i\)が得られる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これにより、\(n = k + 1\)のときも定理が成り立つことが示され、数学的帰納法により二項定理が証明される。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

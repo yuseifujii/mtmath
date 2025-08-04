@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="メネラウスの定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>メネラウスの定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>メネラウスの定理</h2>
+            <p>
+                三角形ABCの辺またはその延長上にある点D, E, Fが一直線上にあるための必要十分条件は、次の等式が成り立つことである。
+            </p><br><br>
+            <ul>
+            <li>三角形とその外部の直線が交わるときの比の関係を示す定理である。チェバの定理と対をなし、幾何学の基本定理として広く利用される。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>三角形ABCに対し、直線が辺BC, CA, ABとそれぞれD, E, Fで交わるとする。このとき、次の関係式が成り立つことを示す。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( \frac{BD}{DC} \cdot \frac{CE}{EA} \cdot \frac{AF}{FB} = 1 \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>証明のために三角形の面積比を用いる。三角形の高さに注目し、比を考察する。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>三角形ABDと三角形ADCについて、それぞれ高さを考慮すると、面積比は底辺の比に等しくなる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( \frac{S_{ABD}}{S_{ADC}} = \frac{BD}{DC} \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>同様に、三角形BCEと三角形ECA、三角形CAFと三角形FABについても面積比を考える。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( \frac{S_{BCE}}{S_{ECA}} = \frac{CE}{EA} \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( \frac{S_{CAF}}{S_{FAB}} = \frac{AF}{FB} \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>三角形ABCの面積全体について、次の関係式が得られる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( \frac{S_{ABD}}{S_{ADC}} \times \frac{S_{BCE}}{S_{ECA}} \times \frac{S_{CAF}}{S_{FAB}} = 1 \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これにより、直線DEFが一直線上にあるための条件が証明された。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="外角の定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>外角の定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>外角の定理</h2>
+            <p>
+                三角形の1つの外角は、その外角に隣接しない2つの内角の和に等しい。
+            </p><br><br>
+            <ul>
+            <li>三角形の外角は、対応する二つの内角の和に等しいことを示す定理である。図形の角度計算に広く用いられ、多角形の性質の理解にも役立つ。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <img src="zzg003-1.png" alt="外角の定理" class="theorem-image">
+
+              <div class="step">
+                
+                  <p>三角形\( ABC \)を考え、\( BC \)の延長線上に点\( D \)をとり、\( ∠ACD \)を三角形の外角とする。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p><a href="zg002-triangle.html">三角形の内角の和</a>は\( 180 \)度であるため、次の式が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ ∠ABC + ∠BAC + ∠ACB = 180° \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>直線上の角度の和も\( 180 \)度であるため、次の式が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ ∠ACB + ∠ACD = 180° \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>この2つの式を比較すると、\(∠ACD\)と\(∠ABC + ∠BAC\)が等しいことがわかる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ ∠ACD = ∠ABC + ∠BAC \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>よって、三角形の外角は、その外角に隣接しない2つの内角の和に等しいことが証明された。(証明終)</p>
+                
+              </div>
+            
+        </div>
+
+        <div class="container">
+        <h2>応用問題</h2>
+        
+        <div class="question">
+    <h3>【レベル：易】</h3>
+    <p><strong>三角形 \( ABC \) において、外角 \( \angle ACD \) が \( 110° \) であり、内角 \( \angle BAC \) が \( 50° \) である。このとき、内角 \( \angle ABC \) の大きさを求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer5')">解答</span>
+    <div id="answer5" class="answer">
+        <p>外角の定理より、三角形の外角はそれと隣り合わない2つの内角の和に等しい。したがって、</p>
+        <p>\( \angle ACD = \angle BAC + \angle ABC \)</p>
+        <p>与えられた値を代入すると、</p>
+        <p>\( 110° = 50° + \angle ABC \)</p>
+        <p>\( \angle ABC = 110° - 50° = 60° \)</p>
+        <p>したがって、\( \angle ABC = 60° \)</p>
+    </div>
+</div><br>
+
+<div class="question">
+    <h3>【レベル：標準】</h3>
+    <p><strong>三角形 \( ABC \) において、外角 \( \angle ACD \) が \( 130° \) であり、内角 \( \angle ABC \) が \( 45° \) である。このとき、内角 \( \angle BAC \) の大きさを求めよ。さらに、残りの内角 \( \angle ACB \) の大きさも求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer6')">解答</span>
+    <div id="answer6" class="answer">
+        <p>外角の定理より、三角形の外角はそれと隣り合わない2つの内角の和に等しい。したがって、</p>
+        <p>\( \angle ACD = \angle BAC + \angle ABC \)</p>
+        <p>与えられた値を代入すると、</p>
+        <p>\( 130° = \angle BAC + 45° \)</p>
+        <p>\( \angle BAC = 130° - 45° = 85° \)</p>
+        <p>次に、三角形の内角の和は \( 180° \) であるため、</p>
+        <p>\( \angle ACB = 180° - (\angle BAC + \angle ABC) \)</p>
+        <p>\( \angle ACB = 180° - (85° + 45°) = 180° - 130° = 50° \)</p>
+        <p>したがって、</p>
+        <p>\( \angle BAC = 85° \)、\( \angle ACB = 50° \)</p>
+    </div>
+</div><br>
+
+<div class="question">
+    <h3>【レベル：難】</h3>
+    <p><strong>以下の図において、三角形 \( ABC \) の外角 \( \angle ACD \) は \( 120° \) である。また、辺 \( AB \) と辺 \( AC \) の長さは等しく、三角形 \( ABC \) は二等辺三角形である。このとき、内角 \( \angle BAC \) の大きさを求めよ。さらに、三角形 \( ABC \) の他の内角 \( \angle ABC \) と \( \angle ACB \) の大きさも求めよ。</strong></p>
+    <img src="zzg003-2.png" alt="外角の定理 - 応用問題<難>" class="theorem-image">
+    <span class="toggle-btn" onclick="toggleAnswer('answer4')">解答</span>
+    <div id="answer4" class="answer">
+        <p>まず、外角の定理より、三角形の外角はそれと隣り合わない2つの内角の和に等しい。したがって、</p>
+        <p>\( \angle ACD = \angle BAC + \angle ABC \)</p>
+        <p>与えられた \( \angle ACD = 120° \) より、</p>
+        <p>\( \angle BAC + \angle ABC = 120° \)</p>
+        <p>次に、三角形 \( ABC \) は二等辺三角形であり、辺 \( AB = AC \) であるため、底角 \( \angle ABC = \angle ACB \) となる。したがって、内角の和は、</p>
+        <p>\( \angle BAC + \angle ABC + \angle ACB = 180° \)</p>
+        <p>\( \angle ABC = \angle ACB \) より、</p>
+        <p>\( \angle BAC + 2\angle ABC = 180° \)</p>
+        <p>ここで、\( \angle BAC + \angle ABC = 120° \) を代入すると、</p>
+        <p>\( 120° + \angle ABC = 180° \)</p>
+        <p>\( \angle ABC = 60° \)</p>
+        <p>したがって、\( \angle BAC = 120° - 60° = 60° \)</p>
+        <p>また、\( \angle ACB = \angle ABC = 60° \)</p>
+        <p>以上より、</p>
+        <p>\( \angle BAC = 60° \)、\( \angle ABC = 60° \)、\( \angle ACB = 60° \)</p>
+    </div>
+</div><br>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

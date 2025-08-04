@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="確率の加法定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>確率の加法定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>確率の加法定理</h2>
+            <p>
+                二つの事象AとBの和事象の確率は、\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)で与えられる。特に、AとBが排反事象である場合、\(P(A \cup B) = P(A) + P(B)\)が成り立つ。
+            </p><br><br>
+            <ul>
+            <li>確率の加法定理は、二つの事象の和事象の確率を求めるための定理である。この定理は確率論の基礎であり、複雑な事象の確率計算に広く利用される。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>二つの事象AとBの和事象\(A \cup B\)を考える。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(A \cup B\)は、Aに含まれるがBに含まれない要素、Bに含まれるがAに含まれない要素、およびAとBの両方に含まれる要素の和集合である。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>したがって、\(P(A \cup B) = P(A \setminus B) + P(B \setminus A) + P(A \cap B)\)が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(P(A) = P(A \setminus B) + P(A \cap B)\)および\(P(B) = P(B \setminus A) + P(A \cap B)\)である。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これらの式を組み合わせると、\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)が得られる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>特に、AとBが排反事象である場合、\(P(A \cap B) = 0\)であるため、\(P(A \cup B) = P(A) + P(B)\)が成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ P(A \cup B) = P(A) + P(B) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これにより、確率の加法定理が証明される。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

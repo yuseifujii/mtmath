@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="方べきの定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>方べきの定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>方べきの定理</h2>
+            <p>
+                円の外部または内部の点Pから円に引いた弦や接線に対し、交点の長さの積が一定となる。
+            </p><br><br>
+            <ul>
+            <li>方べきの定理は、円と直線の交点に関する比の関係を示す定理で、相似を用いた証明が可能である。円と直線の交わり方により3つの場合があり、幾何の問題で広く利用される。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>円O上に異なる2点A, Bを取り、Pを円の外部または内部の点とする。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>Pから円に引いた2本の弦AB, CDが交わる場合を考える。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ PA \times PB = PC \times PD \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【証明】△PACと△PBDに注目し、∠PAC = ∠PBD, ∠PCA = ∠PDBが成り立つ。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これは円周角の定理により示される。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>この2つの角が等しいため、△PAC ∼ △PBDが成立する。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \frac{PA}{PD} = \frac{PC}{PB} \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これを変形すると、</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ PA \times PB = PC \times PD \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>【円の接線と弦の場合】</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>Pから円に引いた接線の長さをPTとし、弦の交点をA, Bとする。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>△PATと△PBTについて、共通角∠PTAを持ち、円周角の定理より∠PAT = ∠PBTが成立する。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>したがって、△PAT ∼ △PBTであり、</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \frac{PA}{PT} = \frac{PT}{PB} \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>両辺にPTをかけると、</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ PA \times PB = PT^2 \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これにより、円の接線と弦に対する方べきの定理も成り立つ。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

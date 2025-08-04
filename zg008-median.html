@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="中線定理（パップスの定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>中線定理（パップスの定理） | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>中線定理（パップスの定理）</h2>
+            <p>
+                三角形ABCにおいて、辺BCの中点をMとすると、中線AMの長さは以下の式で表される。
+            </p><br><br>
+            <ul>
+            <li>三角形の中線の長さを辺の長さを用いて求める定理であり、ベクトルや余弦定理を用いた証明も可能である。三角形の性質を理解する上で重要な役割を果たす。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>三角形ABCにおいて、AMを中線とし、MはBCの中点である。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( AM^2 = \frac{1}{4} (2AB^2 + 2AC^2 - BC^2) \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>まず、ベクトルを用いて証明を行う。座標を設定し、Aを原点 \( (0, 0) \) 、Bを \( (b, 0) \) 、Cを \( (c, d) \) とする。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>MはBCの中点なので、その座標は \( \left( \frac{b+c}{2}, \frac{d}{2} \right) \) となる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>AMの長さをベクトルの距離公式を用いて求める。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( AM^2 = \left( \frac{b+c}{2} - 0 \right)^2 + \left( \frac{d}{2} - 0 \right)^2 \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( = \frac{(b+c)^2}{4} + \frac{d^2}{4} \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>ここで、三角形の各辺の長さを2乗で表す。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( AB^2 = b^2 \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( AC^2 = c^2 + d^2 \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( BC^2 = (c-b)^2 + d^2 \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>上記の式を整理すると、</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ \( AM^2 = \frac{1}{4} (2AB^2 + 2AC^2 - BC^2) \) \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>これにより、中線定理が証明された。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="算術の基本定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>算術の基本定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>算術の基本定理</h2>
+            <p>
+                1より大きい任意の自然数は、素数の積として一意的に表すことができる。つまり、\(n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}\)と表され、この表現は順序を除いて一意である。ここで、\(p_1, p_2, \ldots, p_k\)は素数、\(a_1, a_2, \ldots, a_k\)は正の整数である。
+            </p><br><br>
+            <ul>
+            <li>算術の基本定理は、1より大きい任意の自然数が素数の積として一意的に表せることを示す。この定理は数論の基礎であり、整数の性質を理解する上で重要な役割を果たす。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <div class="step">
+                
+                  <p>1より大きい任意の自然数nが素因数分解できることを示す。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>数学的帰納法を用いる。n=2のとき、2は素数であるため、素因数分解は自明である。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>nが合成数であると仮定し、nの最小の素因数をpとする。\(n = p \cdot m\)と表すことができる。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>mに対して帰納法の仮定を適用し、mが素因数分解できることを示す。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>次に、素因数分解の一意性を示す。異なる素因数分解が存在すると仮定し、矛盾を導く。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <div class="formula">\[ n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k} = q_1^{b_1} q_2^{b_2} \cdots q_l^{b_l} \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(p_1\)が\(q_1, q_2, \ldots, q_l\)のいずれかと等しいことを示す。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(p_1\)と\(q_1\)が等しいとすると、\(a_1 = b_1\)でなければならない。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>この操作を繰り返すことで、すべての素数とその指数が一致することを示す。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>したがって、素因数分解は一意的である。(証明終)</p>
+                
+              </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

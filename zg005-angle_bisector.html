@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="角の二等分線の定理を完全解説！初心者でもわかる証明と応用問題を紹介。Mt.MATHで数学をもっと楽しく学ぼう！">
+    <meta name="author" content="YFIT Japan">
+    <title>角の二等分線の定理 | 完全解説 - Mt.MATH</title>
+    <link rel="icon" href="Mt.MATH_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+   
+<body>
+    <!-- Header Section -->
+    <header class="mountain-header">
+        <img src="Mt.MATH_header(transparent).png" alt="Header Image" class="header-image">
+        <div class="header-text">
+            <h1>マウント・マス</h1>
+            <p>数学の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>角の二等分線の定理</h2>
+            <p>
+                三角形の一つの角の二等分線は、対辺を隣り合う二辺の比に分割する。
+            すなわち、三角形\(ABC\)において、角Aの二等分線が辺\(BC\)を点\(D\)で分割するとき、\[\frac{BD}{DC} = \frac{AB}{AC}\]が成り立つ。
+            </p><br><br>
+            <ul>
+            <li>角の二等分線の定理は、三角形の角の二等分線が対辺を隣り合う二辺の比に分割することを示す。この定理は、三角形の性質を理解し、図形問題を解く上で重要な役割を果たす。</li>
+            </ul><br><br>
+            <h3>証明</h3>
+            
+              <img src="zzg005-1.png" alt="三角形の内角の和" class="theorem-image">
+              
+              <div class="step">
+                
+                  <p>三角形\(ABC\)を考え、角\(A\)の二等分線を引き、辺\(BC\)と交わる点を\(D\)とする。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>また、点\(C\)を通り\( AD \)と平行な直線と\( AB \)の交点を\(E\)とする。</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(AD // EC\)より、錯角は等しいので、\( \angle CED = \angle ACE\)</p>
+                
+              </div>
+            
+              <div class="step">
+                
+                  <p>\(AD // EC\)より、同位角は等しいので、\( \angle BAD = \angle AEC\)</p>
+                
+              </div>
+
+              <div class="step">
+                
+                <p>これと\(\angle BAD = \angle CAD\)より、\(\angle ACE = \angle AEC\)</p>
+              
+              </div>
+
+              <div class="step">
+                
+                <p>よって、\( \triangle ACD \)は二等辺三角形なので、\( AC=AE\)</p>
+              
+              </div>
+              
+              <div class="step">
+                
+                <p>\(AD // EC\)より、平行線と線分比の性質より、</p>
+              
+              </div>
+
+              <div class="step">
+                
+                  <div class="formula">\[ \frac{BD}{DC} = \frac{AB}{AE} \]</div>
+                
+              </div>
+            
+              <div class="step">
+                
+                <p>これと\( AC=AE \)より、</p>
+              
+              </div>
+              
+              <div class="step">
+                
+                <div class="formula">\[ \frac{BD}{DC} = \frac{AB}{AC} \]</div>
+              
+              </div>
+
+              <div class="step">
+                
+                  <p>したがって、角の二等分線は対辺を隣り合う二辺の比に分割することが証明される。(証明終)</p>
+                
+              </div>
+            
+        </div>
+
+        <div class="container">
+        <!-- レベル：易 -->
+<div class="question">
+    <h3>【レベル：易】</h3>
+    <p><strong>三角形 \( ABC \) において、角 \( A \) の二等分線が辺 \( BC \) と交わる点を \( D \) とする。辺 \( AB \) の長さが \( 6 \) cm、辺 \( AC \) の長さが \( 9 \) cm のとき、線分 \( BD \) と線分 \( DC \) の長さの比を求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer10')">解答</span>
+    <div id="answer10" class="answer">
+        <p>角の二等分線の定理より、角の二等分線は対辺を隣り合う2辺の比に内分する。したがって、</p>
+        <p>\( \frac{BD}{DC} = \frac{AB}{AC} \)</p>
+        <p>与えられた値を代入すると、</p>
+        <p>\( \frac{BD}{DC} = \frac{6}{9} = \frac{2}{3} \)</p>
+        <p>したがって、線分 \( BD \) と線分 \( DC \) の長さの比は \( 2:3 \) である。</p>
+    </div>
+</div><br>
+
+<!-- レベル：標準 -->
+<div class="question">
+    <h3>【レベル：標準】</h3>
+    <p><strong>三角形 \( ABC \) において、角 \( A \) の二等分線が辺 \( BC \) と交わる点を \( D \) とする。辺 \( AB \) の長さが \( 8 \) cm、辺 \( AC \) の長さが \( 12 \) cm、辺 \( BC \) の長さが \( 10 \) cm のとき、線分 \( BD \) と線分 \( DC \) の長さをそれぞれ求めよ。</strong></p>
+    <span class="toggle-btn" onclick="toggleAnswer('answer11')">解答</span>
+    <div id="answer11" class="answer">
+        <p>角の二等分線の定理より、</p>
+        <p>\( \frac{BD}{DC} = \frac{AB}{AC} = \frac{8}{12} = \frac{2}{3} \)</p>
+        <p>ここで、\( BD = 2k \)、\( DC = 3k \) とおくと、</p>
+        <p>\( BD + DC = BC \) より、</p>
+        <p>\( 2k + 3k = 10 \)</p>
+        <p>\( 5k = 10 \)</p>
+        <p>\( k = 2 \)</p>
+        <p>したがって、</p>
+        <p>\( BD = 2k = 4 \) cm</p>
+        <p>\( DC = 3k = 6 \) cm</p>
+    </div>
+</div><br>
+
+<!-- レベル：難 -->
+<div class="question">
+    <h3>【レベル：難】</h3>
+<p><strong>三角形 \( ABC \) において、辺 \( AB \) の長さが \( 8 \) cm、辺 \( AC \) の長さが \( 6 \) cm、辺 \( BC \) の長さが \( 10 \) cm である。角 \( A \) の二等分線が辺 \( BC \) と交わる点を \( D \) とする。点 \( D \) から辺 \( AB \) および辺 \( AC \) に垂線を下ろし、その交点をそれぞれ \( E \)、\( F \) とする。線分 \( EF \) の長さを求めよ。</strong></p>
+<span class="toggle-btn" onclick="toggleAnswer('answer14')">解答</span>
+<div id="answer14" class="answer">
+    <p>まず、角の二等分線の定理より、</p>
+    <p>\( \frac{BD}{DC} = \frac{AB}{AC} = \frac{8}{6} = \frac{4}{3} \)</p>
+    <p>ここで、\( BD = 4k \)、\( DC = 3k \) とおくと、</p>
+    <p>\( BD + DC = BC \) より、</p>
+    <p>\( 4k + 3k = 10 \)</p>
+    <p>\( 7k = 10 \)</p>
+    <p>\( k = \frac{10}{7} \)</p>
+    <p>したがって、</p>
+    <p>\( BD = 4k = \frac{40}{7} \) cm、\( DC = 3k = \frac{30}{7} \) cm</p>
+    <p>次に、三角形の面積を利用して高さを求める。三角形 \( ABC \) の面積 \( S \) は、ヘロンの公式を用いて計算できる。</p>
+    <p>半周長 \( s \) は、</p>
+    <p>\( s = \frac{AB + AC + BC}{2} = \frac{8 + 6 + 10}{2} = 12 \) cm</p>
+    <p>したがって、面積 \( S \) は、</p>
+    <p>\( S = \sqrt{s(s - AB)(s - AC)(s - BC)} \)
+       \(   = \sqrt{12 \times (12 - 8) \times (12 - 6) \times (12 - 10)} \)
+       \(   = \sqrt{12 \times 4 \times 6 \times 2} \)
+       \(   = \sqrt{576} = 24 \) cm²</p>
+    <p>三角形 \( ABD \) の面積 \( S_{ABD} \) は、\( BD:DC = 4:3 \) であることから、</p>
+    <p>\( S_{ABD} = \frac{4}{7} \times S = \frac{4}{7} \times 24 = \frac{96}{7} \) cm²</p>
+    <p>同様に、三角形 \( ACD \) の面積 \( S_{ACD} \) は、</p>
+    <p>\( S_{ACD} = \frac{3}{7} \times S = \frac{3}{7} \times 24 = \frac{72}{7} \) cm²</p>
+    <p>三角形 \( ABD \) の高さ \( h_{ABD} \) は、底辺 \( AB \) に対して、</p>
+    <p>\( S_{ABD} = \frac{1}{2} \times AB \times h_{ABD} \) より、</p>
+    <p>\( \frac{96}{7} = \frac{1}{2} \times 8 \times h_{ABD} \)</p>
+    <p>\( h_{ABD} = \frac{96}{7} \times \frac{2}{8} = \frac{24}{7} \) cm</p>
+    <p>同様に、三角形 \( ACD \) の高さ \( h_{ACD} \) は、底辺 \( AC \) に対して、</p>
+    <p>\( S_{ACD} = \frac{1}{2} \times AC \times h_{ACD} \) より、</p>
+    <p>\( \frac{72}{7} = \frac{1}{2} \times 6 \times h_{ACD} \)</p>
+    <p>\( h_{ACD} = \frac{72}{7} \times \frac{2}{6} = \frac{24}{7} \) cm</p>
+    <p>したがって、線分 \( EF \) の長さは、</p>
+    <p>\( EF = h_{ABD} + h_{ACD} = \frac{24}{7} + \frac{24}{7} = \frac{48}{7} \) cm</p>
+    <p>よって、線分 \( EF \) の長さは \( \frac{48}{7} \) cm</p>
+</div>
+
+</div><br>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 YFIT Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
